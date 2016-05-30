@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data.warga.DataPenAddController">
+   <children>
+      <Text layoutX="336.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Penduduk" />
+      <ScrollPane layoutX="30.0" layoutY="51.0" prefHeight="359.0" prefWidth="697.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="51.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="474.0" prefWidth="690.0">
+               <children>
+                  <Text layoutX="20.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Depan" AnchorPane.bottomAnchor="395.0" AnchorPane.leftAnchor="20.0" />
+                  <Text layoutX="24.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alamat" AnchorPane.bottomAnchor="430.0" AnchorPane.leftAnchor="20.0" />
+                  <Text layoutX="20.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Belakang" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="20.0" />
+                  <Text layoutX="20.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status Rumah" AnchorPane.bottomAnchor="325.0" />
+                  <Text layoutX="20.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status Keluarga" AnchorPane.bottomAnchor="290.0" />
+                  <Text layoutX="20.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Kelamin" AnchorPane.bottomAnchor="220.0" />
+                  <Text layoutX="21.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Lahir" AnchorPane.bottomAnchor="255.0" />
+                  <Text layoutX="20.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status Pernikahan" AnchorPane.bottomAnchor="184.98828125" />
+                  <Text layoutX="20.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenjang Pendidikan" AnchorPane.bottomAnchor="149.98828125" />
+                  <Text layoutX="20.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agama" AnchorPane.bottomAnchor="115.0" />
+                  <Text layoutX="20.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Pekerjaan" AnchorPane.bottomAnchor="80.0" />
+                  <Text layoutX="20.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kewarganegaraan" AnchorPane.bottomAnchor="45.0" />
+                  <ComboBox fx:id="alamatBox" layoutX="164.0" layoutY="23.0" prefHeight="25.0" prefWidth="458.0" />
+                  <ComboBox fx:id="statusRumah" layoutX="164.0" layoutY="128.0" prefWidth="150.0" />
+                  <ComboBox fx:id="statusKel" layoutX="164.0" layoutY="163.0" prefWidth="150.0" />
+                  <ComboBox fx:id="jenisKel" layoutX="164.0" layoutY="233.0" prefWidth="150.0" />
+                  <ComboBox fx:id="statusPernikahan" layoutX="164.0" layoutY="268.0" prefWidth="150.0" />
+                  <TextField fx:id="namaDep" layoutX="165.0" layoutY="58.0" prefHeight="25.0" prefWidth="458.0" />
+                  <TextField fx:id="namaBel" layoutX="165.0" layoutY="93.0" prefHeight="25.0" prefWidth="457.0" />
+                  <TextField fx:id="jenjangPen" layoutX="165.0" layoutY="303.0" />
+                  <TextField fx:id="agama" layoutX="165.0" layoutY="338.0" AnchorPane.bottomAnchor="111.0" />
+                  <TextField fx:id="jenisPek" layoutX="165.0" layoutY="373.0" />
+                  <TextField fx:id="Kewarganegaraan" layoutX="165.0" layoutY="408.0" />
+                  <TextField fx:id="tgl" layoutX="165.0" layoutY="198.0" prefHeight="25.0" prefWidth="41.0" />
+                  <TextField fx:id="bln" layoutX="217.0" layoutY="198.0" prefHeight="25.0" prefWidth="41.0" />
+                  <TextField fx:id="thn" layoutX="271.0" layoutY="198.0" prefHeight="25.0" prefWidth="60.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="BackButton" layoutX="682.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+      <Button fx:id="submitButton" layoutX="560.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleSubmits" prefHeight="25.0" prefWidth="105.0" text="Submit" />
+   </children>
+</AnchorPane>

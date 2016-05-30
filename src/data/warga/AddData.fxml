@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data.warga.AddDataController">
+   <children>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="rumahButton" layoutX="169.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleRumah" text="Data Rumah" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="100.0" />
+      <Button fx:id="pendudukButton" layoutX="545.0" layoutY="222.0" mnemonicParsing="false" onAction="#handlePenduduk" text="Data Penduduk" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0" />
+      <Text layoutX="345.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Data" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="BackButton" layoutX="651.0" layoutY="418.0" mnemonicParsing="false" onAction="#handleButtonBack" text="Back" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="651.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="418.0" />
+   </children>
+</AnchorPane>
